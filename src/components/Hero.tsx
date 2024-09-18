@@ -2,6 +2,7 @@ import { AudioWaveform, Earth, Play } from "lucide-react";
 import { Separator } from "./ui/separator";
 import { Button } from "./ui/button";
 import Service from "./Service";
+import Expertise from "./Expertise";
 
 const Hero = () => {
   return (
@@ -96,6 +97,8 @@ const Hero = () => {
         </div>
       </div>
 
+      {/* best Expertise Page */}
+      <Expertise />
       {/* best service page */}
       <Service />
     </>
