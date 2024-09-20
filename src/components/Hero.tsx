@@ -4,11 +4,12 @@ import { Button } from "./ui/button";
 import Service from "./Service";
 import Expertise from "./Expertise";
 import Projects from "./Projects";
+import Process from "./Process";
 
 const Hero = () => {
   return (
     <>
-      <div className="wavy-back max-w-full text-white px-4 md:px-28 overflow-hidden">
+      <div className="wavy-back max-w-full container text-white px-4 md:px-28 overflow-hidden">
         <div className="flex flex-col md:flex-row justify-between">
           {/* Left Section */}
           <div className="flex flex-col md:items-start items-center pt-20 relative justify-between">
@@ -105,6 +106,8 @@ const Hero = () => {
       {/* Completed Projects
        */}
       <Projects />
+      {/* process we follow */}
+      <Process />
     </>
   );
 };

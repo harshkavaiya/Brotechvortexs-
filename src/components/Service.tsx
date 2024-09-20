@@ -1,6 +1,7 @@
 import { Earth, Star } from "lucide-react";
 import { Button } from "./ui/button";
 import { Avatar, AvatarImage } from "./ui/avatar";
+import photo from "../assets/images/gridphoto.png";
 
 const Service = () => {
   return (
@@ -8,35 +9,15 @@ const Service = () => {
       {/* Left Side */}
 
       <div className="order-2 md:order-1 mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4  relative">
-          <div className="relative ml-11 mt-11 w-48  rounded-tl-3xl overflow-hidden">
-            <img
-              src="https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/at-construction-site-senior-engineer-and-supervisor.jpg"
-              alt="Construction workers reviewing plans"
-            />
-          </div>
-          <div className="relative w-60 rounded-tr-3xl overflow-hidden">
-            <img
-              src="https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/at-construction-site-senior-engineer-and-supervisor.jpg"
-              alt="Workers with tools"
-            />
-          </div>
-          <div className="relative w-60 rounded-bl-3xl overflow-hidden">
-            <img
-              src="https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/at-construction-site-senior-engineer-and-supervisor.jpg"
-              alt="Electrician working on a panel"
-            />
-          </div>
-          <div className="relative mr-10 mb-11 w-48 rounded-br-3xl overflow-hidden">
-            <img
-              src="https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/at-construction-site-senior-engineer-and-supervisor.jpg"
-              alt="Construction worker with hammer"
-            />
-          </div>
+        <div className="relative">
+          <img src={photo} alt="grid photo" />
+
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div className="bg-orange-500 borderr rounded-full p-3 h-36 w-36 text-white flex flex-col items-center gap-3 justify-center">
+            <div className="bg-orange-500 borderr rounded-full p-2 md:p-3 w-28 h-28 md:h-36 md:w-36 text-white flex flex-col items-center gap-3 justify-center">
               <Earth size={35} />
-              <p className="text-center text-sm">Trusted Company Since 2024</p>
+              <p className="text-center text-xs md:text-sm">
+                Trusted Company Since 2024
+              </p>
             </div>
           </div>
         </div>
