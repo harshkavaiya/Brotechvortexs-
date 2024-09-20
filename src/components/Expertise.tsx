@@ -11,7 +11,7 @@ type Block = {
 const Expertise = () => {
   return (
     <>
-      <div className="bg-gray-200 overflow-hidden">
+      <div className="bg-gray-200 overflow-hidden ">
         <div className="w-full text-center pt-20">
           <div className="flex items-center justify-center text-[#f86c35]">
             <Hammer size={30} strokeWidth={2} />

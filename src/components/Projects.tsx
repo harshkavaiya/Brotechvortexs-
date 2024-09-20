@@ -1,13 +1,9 @@
 import { MoveRight } from "lucide-react";
 import { Button } from "./ui/button";
-import "./Projects.css";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { PiPipeLight } from "react-icons/pi";
 import { GiPaintRoller } from "react-icons/gi";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import { Autoplay } from "swiper/modules";
 
 type ProjectBlock = {
   src: String;
@@ -16,12 +12,10 @@ type ProjectBlock = {
   desc: String;
   link: String;
 };
-type SliderBlock = {
-  src: String;
-};
+
 const Projects = () => {
   return (
-    <div className="bg-gray-300 ">
+    <div className="bg-gray-200 h-fit">
       <div className="bg-black text-white py-20 xl:px-40 px-10">
         <div className="flex flex-col items-center mx-auto w-full md:flex-row relative">
           <div className="text-2xl text-center md:text-left">
@@ -40,7 +34,7 @@ const Projects = () => {
           <RacioBlock />
         </div>
       </div>
-      <div className="flex flex-wrap justify-center -mt-40 gap-y-44 lg:gap-y-40 gap-x-10 py-20 xl:px-40 mb-10 px-10">
+      <div className="flex flex-wrap justify-center -mt-40 gap-y-44 lg:gap-y-40 gap-x-10 py-20 xl:px-40 px-10">
         <ProjectBlock
           src={
             "https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/plumber-in-uniform-at-showcase-in-plumbering-store.jpg"
@@ -68,83 +62,6 @@ const Projects = () => {
           desc={`Cursus sagittis laborini osam, henderit nos.`}
           link={`/`}
         />
-      </div>
-      <div className="py-20 text-center xl:px-40 px-10">
-        <div className="flex items-center justify-center text-center flex-col">
-          <div className="w-full h-[1px] bg-orange-500 opacity-60"></div>
-          <span className="overflow-hidden bg-gray-300 font-semibold sm:text-lg md:text-2xl -mt-3.5 md:-mt-5 px-2 z-20">
-            30+ companies & clients trust our worker
-          </span>
-        </div>
-      </div>
-      {/* slider */}
-      <div className="xl:px-40 mb-10 px-10 flex items-center">
-        <Swiper
-          breakpoints={{
-            "@0.00": {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-            "@0.75": {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            "@1.00": {
-              slidesPerView: 4,
-              spaceBetween: 30,
-            },
-            "@1.50": {
-              slidesPerView: 5,
-              spaceBetween: 50,
-            },
-          }}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: false,
-          }}
-          navigation={true}
-          modules={[Autoplay]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <SliderBlock
-              src={`https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/logo_digimark.png`}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <SliderBlock
-              src={`https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/logo_fixcom.png`}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <SliderBlock
-              src={`https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/logo_markeezo.png`}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <SliderBlock
-              src={`https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/logo_audioplus.png`}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <SliderBlock
-              src={`https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/Logo_buzzify.png`}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <SliderBlock
-              src={`https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/logo_markeezo.png`}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <SliderBlock
-              src={`https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/Logo_buzzify.png`}
-            />
-          </SwiperSlide>
-        </Swiper>
       </div>
     </div>
   );
@@ -219,11 +136,4 @@ const ProjectBlock = ({ src, icon, title, desc, link }: ProjectBlock) => {
   );
 };
 
-const SliderBlock = ({ src }: SliderBlock) => {
-  return (
-    <div className="h-14 w-[30vw] sm:w-[20vw] md:w-32 lg:w-44 flex items-center justify-center">
-      <img src={`${src}`} alt="img" className="w-full"/>
-    </div>
-  );
-};
 export default Projects;

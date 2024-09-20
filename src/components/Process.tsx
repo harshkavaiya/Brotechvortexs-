@@ -7,52 +7,94 @@ import {
   SquareCheckBig,
 } from "lucide-react";
 import { Button } from "./ui/button";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Autoplay } from "swiper/modules";
+
+type SliderBlock = {
+  src: String;
+};
 
 const Process = () => {
   return (
-    <div className="bg-gray-50 flex flex-col items-center md:px-32 px-10 min-h-screen">
-      <div className="flex flex-col md:flex-row items-center justify-center my-8 text-center md:text-left">
-        <div
-          className="hidden md:block flex-grow w-64 bg-orange-400"
-          style={{
-            height: "1px",
-            transform: "scaleY(0.4)",
-            transformOrigin: "center",
-          }}
-        ></div>
-        <span className="md:px-2 text-xl md:text-base font-bold md:font-semibold text-gray-800">
-          30+ companies & clients trust our work
-        </span>
-        <div
-          className="hidden md:block flex-grow w-64 bg-orange-400"
-          style={{
-            height: "1px",
-            transform: "scaleY(0.4)",
-            transformOrigin: "center",
-          }}
-        ></div>
-      </div>
-
-      {/* Logo Section */}
-      <header className="flex flex-col md:flex-row justify-between items-center py-4 px-4 md:px-8 mb-20 md:mb-10 space-y-4 md:space-y-0">
-        <div className="flex space-x-10 md:space-x-9 justify-center">
-          <img
-            src="https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/logo_digimark.png"
-            alt="Logo 1"
-            className="h-8"
-          />
-          <img
-            src="https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/logo_digimark.png"
-            alt="Logo 2"
-            className="h-8"
-          />
-          <img
-            src="https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/logo_digimark.png"
-            alt="Logo 3"
-            className="h-8 hidden md:block"
-          />
+    <div className="bg-gray-200 flex flex-col items-center md:px-40 px-10 min-h-screen pt-36">
+      <div className="text-center w-full">
+        <div className="flex items-center justify-center text-center flex-col">
+          <div className="w-full h-[1px] bg-orange-500 opacity-60"></div>
+          <span className="overflow-hidden bg-gray-200 font-bold md:font-semibold text-xl md:text-2xl -mt-3.5 md:-mt-5 px-2 z-20">
+            30+ companies & clients trust our worker
+          </span>
         </div>
-      </header>
+      </div>
+      {/* slider */}
+      <div className="w-full flex items-center my-16">
+        <Swiper
+          breakpoints={{
+            "@0.00": {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            "@0.75": {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            "@1.00": {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+            "@1.50": {
+              slidesPerView: 5,
+              spaceBetween: 50,
+            },
+          }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: false,
+          }}
+          navigation={true}
+          modules={[Autoplay]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <SliderBlock
+              src={`https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/logo_digimark.png`}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SliderBlock
+              src={`https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/logo_fixcom.png`}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SliderBlock
+              src={`https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/logo_markeezo.png`}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SliderBlock
+              src={`https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/logo_audioplus.png`}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SliderBlock
+              src={`https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/Logo_buzzify.png`}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SliderBlock
+              src={`https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/logo_markeezo.png`}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SliderBlock
+              src={`https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/Logo_buzzify.png`}
+            />
+          </SwiperSlide>
+        </Swiper>
+      </div>
 
       {/* Process Section */}
       <div className="flex flex-col md:flex-row justify-between items-center">
@@ -141,6 +183,14 @@ const Process = () => {
           </div>
         </div>
       </div>
+    </div>
+  );
+};
+
+const SliderBlock = ({ src }: SliderBlock) => {
+  return (
+    <div className="h-14 w-[30vw] sm:w-[20vw] md:w-32 lg:w-44 flex items-center justify-center">
+      <img src={`${src}`} alt="img" className="w-full" />
     </div>
   );
 };
