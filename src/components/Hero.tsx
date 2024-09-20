@@ -3,6 +3,7 @@ import { Separator } from "./ui/separator";
 import { Button } from "./ui/button";
 import Service from "./Service";
 import Expertise from "./Expertise";
+import Projects from "./Projects";
 import Process from "./Process";
 import Provide from "./Provide";
 
@@ -103,6 +104,9 @@ const Hero = () => {
       <Expertise />
       {/* best service page */}
       <Service />
+      {/* Completed Projects
+       */}
+      <Projects />
       {/* process we follow */}
       <Process />
       {/* provide service */}

@@ -1,5 +1,6 @@
 import { CircleArrowRight, Hammer, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Button } from "./ui/button";
 type Block = {
   src: String;
   title: String;
@@ -10,7 +11,7 @@ type Block = {
 const Expertise = () => {
   return (
     <>
-      <div className="bg-gray-200 overflow-hidden">
+      <div className="bg-gray-200 overflow-hidden ">
         <div className="w-full text-center pt-20">
           <div className="flex items-center justify-center text-[#f86c35]">
             <Hammer size={30} strokeWidth={2} />
@@ -66,14 +67,14 @@ const Expertise = () => {
           </div>
         </div>
         <div className="flex justify-center w-full mb-20">
-          <div className="border-2 font-semibold border-dashed border-gray-400 w-fit rounded-full px-10 py-2 flex items-center gap-x-8 text-xl">
+          <div className="flex items-center flex-col w-[90%] gap-y-5 px-10 py-6 md:gap-y-0 md:flex-row border-2 font-semibold border-dashed border-gray-400 md:w-fit rounded-full md:px-10 md:py-2 gap-x-8 text-xl">
             Call us for schedule :
-            <span className="flex items-center justify-center text-2xl text-[#f86c35] hover:text-red-900 transition duration-200 cursor-pointer gap-4">
+            <span className="flex items-center justify-center text-md sm:text-xl text-[#f86c35] hover:text-red-900 transition duration-200 cursor-pointer gap-4">
               <Phone /> 91+ 9090909090
             </span>
-            <button className="px-12 uppercase py-4 text-white font-semibold  bg-[#f86c35] hover:bg-red-900 transition duration-200 rounded-sm">
-              More Service
-            </button>
+            <Button className="bg-yellow-500 hover:bg-orange-500">
+              MORE SERVICE
+            </Button>
           </div>
         </div>
       </div>
@@ -92,8 +93,8 @@ const Block = ({ src, title, desc, link }: Block) => {
       </div>
       <div className="w-full flex flex-col justify-center items-center md:flex-row md:my-auto h-full">
         <div className="md:w-[40%] h-[60%] sm:h-[70%]"></div>
-        <div className="md:w-[60%] h-[40%] sm:h-[20%] w-full lg:ml-12 xl:ml-14 md:ml-8 text-center md:text-left md:flex md:justify-center md:flex-col">
-          <h3 className="text-2xl font-bold md:-mt-5 lg:-mt-4 xl:mt-0 mb-5">
+        <div className="md:w-[60%] h-[40%] sm:h-[30%] w-full lg:ml-12 xl:ml-14 md:ml-8 text-center md:text-left md:flex md:justify-center md:flex-col">
+          <h3 className="text-2xl font-bold md:-mt-5 -mt-6 sm:-mt-10 lg:-mt-4 xl:mt-0 mb-5">
             {title}
           </h3>
           <p className=" text-gray-500 mb-4 sm:mb-6">{desc}</p>
