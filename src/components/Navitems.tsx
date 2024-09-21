@@ -63,7 +63,7 @@ const Navitems = () => {
               <Separator />
               <li className="flex items-center gap-1">
                 <PhoneCall size={19} />
-                +918238443846
+                +919090909090
               </li>
             </ul>
           </NavigationMenuContent>

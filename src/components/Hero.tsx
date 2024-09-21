@@ -5,17 +5,16 @@ import Service from "./Service";
 import Expertise from "./Expertise";
 import Projects from "./Projects";
 import Process from "./Process";
-import Blogs from "./Blogs";
 
 const Hero = () => {
   return (
     <>
-      <div className="wavy-back max-w-full container text-white px-4 md:px-28 overflow-hidden">
-        <div className="flex flex-col md:flex-row justify-between">
+      <div className="wavy-back max-w-full container pt-14 text-white px-4 md:px-28 overflow-hidden">
+        <div className="flex flex-col flex-wrap  md:flex-row md:gap-32 justify-center">
           {/* Left Section */}
-          <div className="flex flex-col md:items-start items-center pt-20 relative justify-between">
+          <div className="flex flex-col pt-20 md:items-start items-center  relative justify-between">
             {/* Icons */}
-            <div className="flex mb-5 space-x-2">
+            <div className="flex mb-10 space-x-2">
               <AudioWaveform color="#F97316" />
               <Earth color="#FBBF24" />
               <AudioWaveform color="#F97316" />
@@ -27,7 +26,7 @@ const Hero = () => {
             </h1>
 
             {/* Left Image Frame */}
-            <div className="w-96 h-[450px] md:h-[500px] mt-10 border-[#FBBF24] rounded-t-full bg-transparent border-x-4 border-t-4 border-b-0 relative">
+            <div className="w-96 h-[450px] md:h-[500px] mt-[72px] border-[#FBBF24] rounded-t-full bg-transparent border-x-4 border-t-4 border-b-0 relative">
               <div className="absolute left-5 bottom-0">
                 <img
                   src="https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/happy-bearded-man-smiling-while-standing-with-crossed.jpg"
@@ -63,20 +62,20 @@ const Hero = () => {
           </div>
 
           {/* Right Section */}
-          <div className="flex flex-col items-center md:items-start relative justify-between mt-10 md:mt-0">
+          <div className="flex flex-col  items-center md:items-start justify-between mt-10 md:mt-0">
             {/* Right Image Frame */}
-            <div className="w-[350px] h-[450px] md:w-96 md:h-[500px] md:mt-0 mt-[300px] border-[#FBBF24] rounded-b-full bg-transparent border-x-4 border-t-0 border-b-4 relative">
+            <div className="w-[350px] h-[450px] md:w-full md:h-[500px] md:mt-0 mt-[300px] border-[#FBBF24] rounded-b-full bg-transparent border-x-4 border-t-0 border-b-4 relative">
               <div className="absolute -left-5 top-0">
                 <img
                   src="https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/happy-bearded-man-smiling-while-standing-with-crossed.jpg"
                   alt="Handyman"
-                  className="rounded-b-full h-[450px] md:h-[495px] w-96"
+                  className="rounded-b-full h-[450px] md:h-[495px] w-full"
                 />
               </div>
             </div>
 
             {/* Description and Buttons */}
-            <div className="flex flex-col gap-10 my-10 items-center md:items-start justify-between">
+            <div className="flex flex-col gap-10 pt-10 md:my-10 md:pb-20 items-center md:items-start justify-center">
               <p className="w-96  text-gray-400 text-center md:text-start text-md">
                 Fermentum possimus nostrud lacinia exercitationem eiusmod nisl
                 conubia, beatae veritatis orci aspernatur? Augue ac, totam
@@ -89,7 +88,7 @@ const Hero = () => {
                 </Button>
                 <a
                   href="#"
-                  className="h-12 w-12 flex items-center cursor-pointer justify-center rounded-full bg-black text-white z-50"
+                  className="h-12 w-12 flex items-center cursor-pointer justify-center rounded-full bg-black text-white z-10"
                 >
                   <Play />
                 </a>
@@ -109,8 +108,6 @@ const Hero = () => {
       <Projects />
       {/* process we follow */}
       <Process />
-      {/* News & Blogs */}
-      <Blogs/>
     </>
   );
 };

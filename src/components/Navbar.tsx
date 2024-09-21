@@ -4,7 +4,7 @@ import { AlignRight, PhoneCall, Search } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <div className="px-3 border-b-2 z-50">
+    <div className="px-3 w-full fixed bg-white border-b-2 z-50">
       <div className="flex items-center justify-between h-14">
         {/* Logo */}
         <div>
