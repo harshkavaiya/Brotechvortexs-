@@ -7,7 +7,7 @@ import { GiPaintRoller } from "react-icons/gi";
 
 type ProjectBlock = {
   src: String;
-  icon: React.ElementType;
+  icon: Element;
   title: String;
   desc: String;
   link: String;
@@ -102,8 +102,8 @@ const RacioBlock = () => {
           <span className="text-center text-xl font-bold text-white ">35%</span>
         </div>
       </div>
-      <div className="">
-        <h2 className="text-xl text-center md:text-left font-bold">
+      <div className="text-center md:text-left">
+        <h2 className="text-xl  font-bold">
           Best Tech Used
         </h2>
         <p className="mt-2 text-gray-300">
