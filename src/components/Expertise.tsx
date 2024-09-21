@@ -93,7 +93,7 @@ const Block = ({ src, title, desc, link }: Block) => {
       </div>
       <div className="w-full flex flex-col justify-center items-center md:flex-row md:my-auto h-full">
         <div className="md:w-[40%] h-[60%] sm:h-[70%]"></div>
-        <div className="md:w-[60%] h-[40%] sm:h-[30%] w-full lg:ml-12 xl:ml-14 md:ml-8 text-center md:text-left md:flex md:justify-center md:flex-col">
+        <div className="md:w-[60%] h-[30%] sm:h-[30%] w-full lg:ml-12 xl:ml-14 md:ml-8 text-center md:text-left md:flex md:justify-center md:flex-col">
           <h3 className="text-2xl font-bold md:-mt-5 -mt-6 sm:-mt-10 lg:-mt-4 xl:mt-0 mb-5">
             {title}
           </h3>

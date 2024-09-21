@@ -19,11 +19,11 @@ const Footer = () => {
             <p>icons</p>
           </div>
           <div className="w-full sm:w-[46%] lg:w-[31%]">
-            <div className="text-center">
+            <div className="text-center md:text-left">
               <p className="text-xl font-bold">Useful & Quick Links</p>
               <p>icon</p>
             </div>
-            <div className="flex flex-col sm:flex-row md:pt-6 items-center text-center">
+            <div className="flex flex-col sm:flex-row md:pt-6 items-center text-center md:text-left">
               <div className="w-1/2">
                 <MenuItem link={"/"} title={"About us"} />
                 <MenuItem link={"/"} title={"About us"} />

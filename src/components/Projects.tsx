@@ -103,9 +103,7 @@ const RacioBlock = () => {
         </div>
       </div>
       <div className="text-center md:text-left">
-        <h2 className="text-xl  font-bold">
-          Best Tech Used
-        </h2>
+        <h2 className="text-xl  font-bold">Best Tech Used</h2>
         <p className="mt-2 text-gray-300">
           Gravida commodi unde ipsam culpa impedit.
         </p>

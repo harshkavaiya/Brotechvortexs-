@@ -5,6 +5,7 @@ import Service from "./Service";
 import Expertise from "./Expertise";
 import Projects from "./Projects";
 import Process from "./Process";
+import Team from "./team";
 
 const Hero = () => {
   return (
@@ -108,6 +109,8 @@ const Hero = () => {
       <Projects />
       {/* process we follow */}
       <Process />
+      {/* Meet Our Professionals */}
+      <Team/>
     </>
   );
 };
