@@ -11,7 +11,7 @@ const MainLayout = () => {
       </header>
 
       {/* Main content area */}
-      <main className="flex-1 w-full">
+      <main className="flex-1 w-full mt-14">
         <Outlet />
       </main>
 

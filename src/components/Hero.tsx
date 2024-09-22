@@ -5,12 +5,14 @@ import Service from "./Service";
 import Expertise from "./Expertise";
 import Projects from "./Projects";
 import Process from "./Process";
-import Team from "./team";
+import Team from "./Team";
+import Avatar from "../assets/images/avatar.jpg";
+import Avatar2 from "../assets/images/avatar2.jpg";
 
 const Hero = () => {
   return (
     <>
-      <div className="wavy-back max-w-full container pt-14 text-white px-4 md:px-28 overflow-hidden">
+      <div className="wavy-back max-w-full container text-white px-4 md:px-28 overflow-hidden">
         <div className="flex flex-col flex-wrap  md:flex-row md:gap-32 justify-center">
           {/* Left Section */}
           <div className="flex flex-col pt-20 md:items-start items-center  relative justify-between">
@@ -23,16 +25,16 @@ const Hero = () => {
 
             {/* Heading */}
             <h1 className="text-4xl md:text-6xl md:font-extrabold text-center md:text-start w-full md:w-[500px] font-bold leading-tight">
-              Best Handyman Services At Your Doorsteps!!
+              Modern & Digital IT Solutions For Your Tech Business
             </h1>
 
             {/* Left Image Frame */}
             <div className="w-96 h-[450px] md:h-[500px] mt-[72px] border-[#FBBF24] rounded-t-full bg-transparent border-x-4 border-t-4 border-b-0 relative">
               <div className="absolute left-5 bottom-0">
                 <img
-                  src="https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/happy-bearded-man-smiling-while-standing-with-crossed.jpg"
+                  src={Avatar}
                   alt="Handyman"
-                  className="rounded-t-full h-[450px] md:h-[495px] w-96"
+                  className="rounded-t-full h-[450px] md:h-[495px] w-96 object-cover"
                 />
               </div>
             </div>
@@ -68,9 +70,9 @@ const Hero = () => {
             <div className="w-[350px] h-[450px] md:w-full md:h-[500px] md:mt-0 mt-[300px] border-[#FBBF24] rounded-b-full bg-transparent border-x-4 border-t-0 border-b-4 relative">
               <div className="absolute -left-5 top-0">
                 <img
-                  src="https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/happy-bearded-man-smiling-while-standing-with-crossed.jpg"
+                  src={Avatar2}
                   alt="Handyman"
-                  className="rounded-b-full h-[450px] md:h-[495px] w-full"
+                  className="rounded-b-full h-[450px] md:h-[495px] w-full object-cover"
                 />
               </div>
             </div>
@@ -110,7 +112,7 @@ const Hero = () => {
       {/* process we follow */}
       <Process />
       {/* Meet Our Professionals */}
-      <Team/>
+      <Team />
     </>
   );
 };

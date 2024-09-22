@@ -10,6 +10,7 @@ import { Button } from "./ui/button";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
+import Avatar from "../assets/images/IMG_20240921_221416.png";
 
 type SliderBlock = {
   src: String;
@@ -103,7 +104,7 @@ const Process = () => {
           <div className="w-full md:w-64 h-[380px] md:h-[400px] mt-10 border-[#FC7F4B] rounded-t-full bg-transparent border-x-4 border-t-2 border-b-0">
             <div className="absolute left-5 bottom-0">
               <img
-                src="https://demo.xperthemes.com/handon/wp-content/uploads/sites/11/2024/07/handsome-plumber-in-overalls-and-tool-bell-looking-at-camera-in-kitchen.png"
+                src={Avatar}
                 alt="Handyman"
                 className="h-[430px] md:h-[450px] w-80"
               />
