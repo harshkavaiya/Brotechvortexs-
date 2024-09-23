@@ -8,7 +8,7 @@ import {
   NavigationMenuTrigger,
 } from "./ui/navigation-menu";
 import { Separator } from "./ui/separator";
-import { AppWindow, LayoutDashboardIcon, Mail, PhoneCall } from "lucide-react";
+import { AppWindow } from "lucide-react";
 import { CgWebsite } from "react-icons/cg";
 import { HiDevicePhoneMobile } from "react-icons/hi2";
 

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navitems from "./Navitems";
 import { AlignRight, PhoneCall, Search } from "lucide-react";
+import Sidebar from "./Sidebar";
 
 const Navbar = () => {
   return (
@@ -24,6 +25,7 @@ const Navbar = () => {
           <div className="border-x-2 p-4 mx-3 cursor-pointer">
             <Search size={19} />
           </div>
+          <Sidebar />
 
           {/* Menu Icon (mobile) */}
           <div className="md:hidden flex w-10 h-10 items-center gap-1 py-4 px-2 rounded-md cursor-pointer bg-slate-400">
