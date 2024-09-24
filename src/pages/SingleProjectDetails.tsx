@@ -12,9 +12,9 @@ const SingleProjectDetails = () => {
   return (
     <div className="bg-gray-200">
       <SitemapPath title={"Project"} child={`${slug}`} />
-      <div className="flex flex-col lg:flex-row xl:mx-28 py-10 lg:py-20 mx-10 gap-y-5 lg:gap-x-6">
+      <div className="flex flex-col lg:flex-row xl:mx-28 py-10 lg:py-20 mx-4 gap-y-5 lg:gap-x-6">
         {/* left side project details */}
-        <div className="lg:w-[70%]">
+        <div className="lg:w-[70%] w-full">
           <Swiper
             slidesPerView={1}
             spaceBetween={10}
@@ -56,8 +56,10 @@ const SingleProjectDetails = () => {
             </SwiperSlide>
           </Swiper>
           <div className="flex flex-col gap-y-3">
-            <h2 className="text-[28px] font-bold mt-3">{slug}</h2>
-            <p className="">
+            <h2 className="text-[20px] md:text-[28px] font-bold mt-3">
+              {slug}
+            </h2>
+            <p className="text-sm md:text-lg">
               Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque
               inventore commodi labore quia quia. Exercitationem repudiandae
               officiis neque suscipit non officia eaque itaque enim. Voluptatem
