@@ -101,7 +101,7 @@ const Process = () => {
         {/* Left Section */}
         <div className="relative order-2 lg:order-1 w-full px-10 flex justify-center lg:block mt-7 lg:mt-0">
           <div className="w-full lg:w-64 h-[380px] lg:h-[400px] mt-10 border-[#FC7F4B] rounded-t-full bg-transparent border-x-4 border-t-2 border-b-0">
-            <div className="lg:absolute lg:left-5 bottom-0  -mt-14 w-full ml-6 lg:ml-0">
+            <div className="lg:absolute lg:-left-8 bottom-0 -mt-14 w-full ml-6 lg:ml-0">
               <img
                 src={Avatar}
                 alt="Handyman"
