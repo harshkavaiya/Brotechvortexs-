@@ -140,7 +140,6 @@ export const ProjectBlock = ({
   title,
   desc,
   link,
-  target,
 }: ProjectBlock) => {
   return (
     <div className="relative max-w-sm md:max-w-xs">
