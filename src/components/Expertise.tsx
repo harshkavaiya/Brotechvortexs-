@@ -1,10 +1,10 @@
 import { CircleArrowRight, Hammer, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
-import Cretivity from "../assets/images/creativity.png";
-import CynerSecurity from "../assets/images/cybersecurity.png";
-import SoftDevlop from "../assets/images/software_development.png";
-import UI_UX from "../assets/images/ui_ux_design.png";
+import Cretivity from "../assets/images/creative.jpg";
+import CynerSecurity from "../assets/images/cyber.jpg";
+import SoftDevlop from "../assets/images/softdev.jpg";
+import UI_UX from "../assets/images/uiux.jpg";
 
 type Block = {
   src: String;
@@ -84,7 +84,7 @@ const Block = ({ src, title, desc, link }: Block) => {
     <div className="block relative rounded-[180px] h-[550px] sm:h-[670px] md:h-80 lg:h-64 md:rounded-[130px] lg:rounded-full bg-white border border-gray-300  px-10 w-fit lg:mx-5 xl:mx-10 shadow-md shadow-gray-300">
       <div className="absolute flex justify-center right-0 left-0 md:-top-4 md:mx-0 mx-auto md:-left-5 w-[76vw] sm:h-[60vh] h-[40vh] md:w-72 md:h-72 lg:w-60 lg:h-60 rounded-full md:rounded-full border-[2px] border-dashed border-[#FBBF24] md:overflow-hidden">
         <img
-          className="rounded-full sm:-top-1 absolute -top-1 h-[40vh] sm:h-[61vh] md:h-full md:-top-2 object-fill"
+          className="rounded-full sm:-top-1 absolute -top-1 h-[40vh] sm:h-[61vh] md:h-full md:-top-2 object-cover"
           src={`${src}`}
         />
       </div>

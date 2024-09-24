@@ -4,8 +4,8 @@ import { HiOutlineLightBulb } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { PiPipeLight } from "react-icons/pi";
 import { GiPaintRoller } from "react-icons/gi";
-import UIUX from "../assets/images/ui_ux.jpg";
-import Maintence from "../assets/images/maintenance.jpg";
+import UIUX from "../assets/images/uiux.jpg";
+import Maintence from "../assets/images/maintain.jpg";
 import Devlop from "../assets/images/devlop.jpg";
 import { ReactNode } from "react";
 
@@ -142,7 +142,7 @@ export const ProjectBlock = ({
   link,
 }: ProjectBlock) => {
   return (
-    <div className="relative max-w-sm md:max-w-xs">
+    <div className="relative max-w-sm md:max-w-xs object-cover">
       <img
         className="rounded-[30px] w-full h-[340px]"
         src={`${src}`}
