@@ -18,8 +18,7 @@ const Project = () => {
           icon={<BsShop />}
           title={`Ecommerce`}
           desc={`Ecommerce Website using React js and nodejs`}
-          link={`https://www.shopwaale.online/`}
-          target={"_blank"}
+          link={`Ecommerce`}
         />
         <ProjectBlock
           src={
@@ -28,8 +27,7 @@ const Project = () => {
           icon={<PiStudentBold />}
           title={`College Mangment`}
           desc={`Manage The College in Digitaly`}
-          link={`https://adarsh-flax.vercel.app/`}
-          target={"_blank"}
+          link={`College Mangment`}
         />
         <ProjectBlock
           src={
@@ -38,8 +36,7 @@ const Project = () => {
           icon={<IoIosDesktop />}
           title={`Desktop Software`}
           desc={`Create A Desktop App`}
-          link={`https://www.shopwaale.online/`}
-          target={"_blank"}
+          link={`Desktop Software`}
         />
         <ProjectBlock
           src={
@@ -48,8 +45,7 @@ const Project = () => {
           icon={<IoPersonOutline />}
           title={`Portfolio`}
           desc={`Create A Personal PortFolio`}
-          link={`https://hardik-portfolio-ruddy.vercel.app/`}
-          target={"_blank"}
+          link={`Portfolio`}
         />
         <ProjectBlock
           src={
@@ -58,8 +54,7 @@ const Project = () => {
           icon={<SlLocationPin />}
           title={`Track Location`}
           desc={`Track the People Location`}
-          link={`https://www.shopwaale.online/`}
-          target={"_blank"}
+          link={`Track Location`}
         />
       </div>
     </div>

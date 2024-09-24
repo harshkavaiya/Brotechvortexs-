@@ -23,7 +23,7 @@ const Sidebar = () => {
           <AlignRight size={19} />
         </Button>
       </SheetTrigger>
-      <SheetContent className="flex flex-col">
+      <SheetContent className="flex flex-col w-full sm:w-[60%]">
         <SheetHeader className="flex flex-row items-center justify-between mt-2">
           <SheetTitle>Brotechvortexs</SheetTitle>
         </SheetHeader>

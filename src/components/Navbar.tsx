@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import Navitems from "./Navitems";
 import { AlignRight, PhoneCall, Search } from "lucide-react";
-import { PhoneCall, Search } from "lucide-react";
 import Sidebar from "./Sidebar";
 
 const Navbar = () => {

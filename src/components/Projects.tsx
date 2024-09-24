@@ -156,11 +156,7 @@ export const ProjectBlock = ({
         <div className=" bg-white rounded-[30px_30px_100px_100px] shadow-sm shadow-gray-400 w-[90%] h-36 text-black mx-auto flex items-center flex-col p-3 text-center">
           <h2 className="font-bold text-[24px]">{title}</h2>
           <p className="w-[70%] my-2">{desc}</p>
-          <Link
-            to={`${link}`}
-            target={`${target ? target : "_parent"}`}
-            className="absolute -bottom-7"
-          >
+          <Link to={`${link}`} className="absolute -bottom-7">
             <Button className="bg-yellow-500  hover:bg-orange-500 h-14 w-14  rounded-full">
               <MoveRight size={20} strokeWidth={3} />
             </Button>
