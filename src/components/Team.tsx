@@ -36,7 +36,13 @@ const Team = () => {
               </div>
             </div>
             <div className="lg:w-1/2 px-2 py-2 flex flex-col">
-              <div className="flex flex-wrap gap-x-4">
+              {/* <div className="flex flex-wrap gap-x-4">
+                <InputBlock placeholder={"Your Name"} />
+                <InputBlock placeholder={"Your Email"} />
+                <InputBlock placeholder={"Your Phone no"} />
+                <InputBlock placeholder={"Service You need"} />
+              </div> */}
+              <div className="grid md:grid-cols-2 gap-x-2 sm:grid-cols-1">
                 <InputBlock placeholder={"Your Name"} />
                 <InputBlock placeholder={"Your Email"} />
                 <InputBlock placeholder={"Your Phone no"} />
@@ -82,7 +88,7 @@ export const InputBlock = ({ type, placeholder }: InputBlock) => {
   return (
     <input
       type={`${type ? type : "text"}`}
-      className="w-full md:w-[48%] my-2 px-5 py-5 rounded-sm text-black placeholder:text-gray-400 outline-none active:rounded-full focus:rounded-full"
+      className="w-full my-2 px-4 py-5 rounded-sm text-black placeholder:text-gray-400 outline-none focus:rounded-full transition-colors focus:bg-gray-300 duration-300"
       placeholder={`${placeholder}`}
     />
   );
