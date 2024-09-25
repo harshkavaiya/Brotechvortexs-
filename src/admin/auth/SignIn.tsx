@@ -40,7 +40,7 @@ export const Cardd = () => {
               <Input id="name" placeholder="Enter your Password" />
             </div>
             <Link
-              to="/forgot-password"
+              to="/admin/forgot-password"
               className="text-right hover:underline cursor-pointer"
             >
               Forgot Password?
@@ -58,10 +58,6 @@ export const Cardd = () => {
             Login
           </Button>
         )}
-
-        <Button variant="outline" className="w-full">
-          Sign Up
-        </Button>
       </CardFooter>
     </Card>
   );
