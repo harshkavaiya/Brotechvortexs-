@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { FaPlus, FaQuoteRight } from "react-icons/fa";
+import { FaQuoteRight } from "react-icons/fa";
 import { BiPhoneCall } from "react-icons/bi";
 import TemaMembers from "./TemaMembers";
 
