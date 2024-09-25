@@ -3,7 +3,6 @@ import SitemapPath from "../components/SitemapPath";
 import { Button } from "../components/ui/button";
 import { ReactNode } from "react";
 import { FaCode } from "react-icons/fa";
-import Pricelist from "../components/Pricelist";
 import { RiPresentationFill } from "react-icons/ri";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { HiOutlineClipboardDocumentCheck } from "react-icons/hi2";
@@ -98,9 +97,6 @@ const Services = () => {
               }
             />
           </div>
-        </div>
-        <div className="my-20">
-          <Pricelist />
         </div>
       </div>
     </div>

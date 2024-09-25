@@ -7,6 +7,8 @@ import Aboutus from "./pages/Aboutus";
 import Contactus from "./pages/Contactus";
 import Project from "./pages/Project";
 import SingleProjectDetails from "./pages/SingleProjectDetails";
+import SignIn from "./admin/auth/SignIn";
+import Forgot from "./admin/auth/Forgot";
 const App = () => {
   const appRouter = createBrowserRouter([
     {
@@ -42,10 +44,14 @@ const App = () => {
           element: <NotFound />,
         },
       ],
-      // {
-      //   path: "/login",
-      //   element: <Login />,
-      // },
+    },
+    {
+      path: "/admin",
+      element: <SignIn />,
+    },
+    {
+      path: "forgot-password",
+      element: <Forgot />,
     },
   ]);
   return (
