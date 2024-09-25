@@ -43,13 +43,12 @@ const App = () => {
           path: "*",
           element: <NotFound />,
         },
-        {
-          path: "/admin/login",
-          element: <SignIn />,
-        },
       ],
     },
-
+    {
+      path: "/admin/login",
+      element: <SignIn />,
+    },
     {
       path: "/admin/forgot-password",
       element: <Forgot />,
