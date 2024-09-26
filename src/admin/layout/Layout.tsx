@@ -3,14 +3,13 @@ import Sidebar from "../components/Sidebar";
 
 const Layout = () => {
   return (
-    <div className="flex min-h-screen overflow-x-hidden">
+    <div className="fixed left-0 top-0 flex">
       {/* Navbar */}
-      <header className="">
+      <header className="ml-4">
         <Sidebar />
       </header>
-
       {/* Main content area */}
-      <main className="flex-1 w-full mt-14">
+      <main className="overflow-y-scroll mt-5 px-2 w-full p-10">
         <Outlet />
       </main>
     </div>
