@@ -55,11 +55,12 @@ const App = () => {
           path: "",
           element: <Main />,
         },
+        { path: "/login", element: <SignIn /> },
       ],
     },
     { path: "sign-up", element: <SignIn /> },
     {
-      path: "forgot-password",
+      path: "/admin/forgot-password",
       element: <Forgot />,
     },
   ]);
