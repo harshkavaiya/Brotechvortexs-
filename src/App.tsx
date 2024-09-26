@@ -9,6 +9,8 @@ import Project from "./pages/Project";
 import SingleProjectDetails from "./pages/SingleProjectDetails";
 import SignIn from "./admin/auth/SignIn";
 import Forgot from "./admin/auth/Forgot";
+import Layout from "./admin/layout/Layout";
+import Main from "./admin/Pages/Main";
 const App = () => {
   const appRouter = createBrowserRouter([
     {
@@ -47,8 +49,15 @@ const App = () => {
     },
     {
       path: "/admin",
-      element: <SignIn />,
+      element: <Layout />,
+      children: [
+        {
+          path: "",
+          element: <Main />,
+        },
+      ],
     },
+    { path: "sign-up", element: <SignIn /> },
     {
       path: "forgot-password",
       element: <Forgot />,
