@@ -46,7 +46,7 @@ const Main = () => {
 
 const InfoBlock = ({ number, title, link, status }: InfoBlock) => {
   return (
-    <div className="bg-red-300 w-full rounded-lg px-5 py-4">
+    <div className="bg-gray-300 w-full rounded-lg px-5 py-4">
       <div className="flex items-center">
         <div className="text-[80px] border border-orange-500 p-1.5 rounded-full mr-3">
           <TbCircle />

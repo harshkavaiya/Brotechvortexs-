@@ -6,21 +6,25 @@ import { BiMessageSquareDetail } from "react-icons/bi";
 import { VscFeedback } from "react-icons/vsc";
 import { IoMdNotificationsOutline, IoIosArrowForward } from "react-icons/io";
 import { IoSettingsOutline } from "react-icons/io5";
+import { CgWebsite } from "react-icons/cg";
+import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
   const [isExpanded, setIsExpanded] = useState(false);
+  let navigate = useNavigate();
 
   const toggleSidebar = () => {
     setIsExpanded(!isExpanded);
   };
 
   const menuItems = [
-    { icon: RxDashboard, text: "Dashboard" },
-    { icon: VscFeedback, text: "Client Feedback" },
-    { icon: BiMessageSquareDetail, text: "Client Messages" },
-    { icon: IoMdNotificationsOutline, text: "Notifications" },
-    { icon: HiOutlineUsers, text: "Users Management" },
-    { icon: IoSettingsOutline, text: "Settings" },
+    { icon: RxDashboard, text: "Dashboard", link: "/" },
+    { icon: CgWebsite, text: "Project", link: "/Project" },
+    { icon: VscFeedback, text: "Client Feedback", link: "/" },
+    { icon: BiMessageSquareDetail, text: "Client Messages", link: "/" },
+    { icon: IoMdNotificationsOutline, text: "Notifications", link: "/" },
+    { icon: HiOutlineUsers, text: "Users Management", link: "/" },
+    { icon: IoSettingsOutline, text: "Settings", link: "/" },
   ];
 
   return (
@@ -46,6 +50,7 @@ const Sidebar = () => {
                 <li key={index}>
                   <Button
                     variant="secondary"
+                    onClick={() => navigate(`/Admin${item.link}`)}
                     className="w-full justify-start hover:bg-slate-300 px-4"
                     aria-label={item.text}
                   >
