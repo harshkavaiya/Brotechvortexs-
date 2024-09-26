@@ -55,7 +55,7 @@ const App = () => {
           path: "",
           element: <Main />,
         },
-        { path: "/login", element: <SignIn /> },
+        { path: "login", element: <SignIn /> },
       ],
     },
     { path: "sign-up", element: <SignIn /> },
