@@ -55,10 +55,9 @@ const App = () => {
           path: "",
           element: <Main />,
         },
-        { path: "login", element: <SignIn /> },
       ],
     },
-    { path: "sign-up", element: <SignIn /> },
+    { path: "/admin/login", element: <SignIn /> },
     {
       path: "/admin/forgot-password",
       element: <Forgot />,
