@@ -13,6 +13,10 @@ import Layout from "./admin/layout/Layout";
 import Main from "./admin/Pages/Main";
 import { Toaster } from "sonner";
 import OtpVerify from "./admin/auth/OtpVerify";
+import AdminProject from "./admin/Pages/Project/See";
+import AdminProjectAdd from "./admin/Pages/Project/Add";
+import AdminProjectUpdate from "./admin/Pages/Project/Update";
+
 const App = () => {
   const appRouter = createBrowserRouter([
     {
@@ -50,12 +54,24 @@ const App = () => {
       ],
     },
     {
-      path: "/admin",
+      path: "/Admin/",
       element: <Layout />,
       children: [
         {
           path: "",
           element: <Main />,
+        },
+        {
+          path: "Project",
+          element: <AdminProject />,
+        },
+        {
+          path: "Project/Add",
+          element: <AdminProjectAdd />,
+        },
+        {
+          path: "Project/Update",
+          element: <AdminProjectUpdate />,
         },
         {
           path: "*",
